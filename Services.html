@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<title>Services Page</title>
+<style>
+* {
+
+  box-sizing: border-box;
+
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+   
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: baseline;
+
+
+}
+
+header{
+  background: gray;
+  height: 7em;
+  border: 1px solid black;
+
+}
+
+
+ footer {
+  background: skyblue;
+  height: 7em;
+  background-color: gray;
+  border: 1px solid black;
+}
+
+
+#Box1{
+
+  background-color: gray;
+  margin: 10px;
+  font-size: 30px;
+  width: 550px;
+  height: 450px;
+  border: 1px solid black;
+  box-sizing: border-box;
+ 
+
+
+}
+
+#Box2{
+  background-color: gray;
+  margin: 10px;
+  font-size: 30px;
+  width: 550px;
+  height: 450px;
+  border: 1px solid black;
+  box-sizing: border-box;
+
+
+}
+
+
+
+</style>
+<body>
+<header></header>
+
+  <div class="main">
+
+
+ 
+ <div id="Box1"></div>
+ <div id="Box2"></div>
+
+
+
+  </div>
+ 
+  <center><footer></footer></center>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+  $(function() {
+    $('#Box1').fadeOut(3000).show(3000)
+
+  });
+
+  $(function() {
+    $('#Box2').fadeOut(3000).show(3000)
+
+  });
+
+
+
+
+</script></body>
