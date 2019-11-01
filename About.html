@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <title>About Page</title>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
 <style>
 * {
-  box-sizing: border-box;
-}
 
-body {
+  box-sizing: border-box;
+
+}
+body{
   display: flex;
+  justify-content: center;
   min-height: 100vh;
-  flex-direction: column;
   margin: 0;
-   
+  background-image: url("new.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
 }
 
 .main {
@@ -30,55 +35,42 @@ body {
 }
 
 .header{
-  background: skyblue;
-  height: 7em;
-  border: 1px solid black;
+  background: ;
+  height: 3em;
+  
 }
-
-
 
 
 
 #Box1{
 
-  background-color: skyblue;
+  
   margin: 10px;
   font-size: 30px;
-  width: 450px;
-  height: 350px;
+  width: 495px;
+  height: 370px;
   border: 1px solid black;
   box-sizing: border-box;
- 
+  border-radius: 1.5px;
 
 
 }
 
 #Box2{
-  background-color: skyblue;
+  
   margin: 10px;
   font-size: 30px;
-  width: 450px;
-  height: 350px;
+  width: 495px;
+  height: 370px;
   border: 1px solid black;
   box-sizing: border-box;
-
-
-}
-#Box3{
-  background-color: skyblue;
-  margin: 10px;
-  font-size: 30px;
-  width: 450px;
-  height: 350px;
-  border: 1px solid black;
-  box-sizing: border-box;
-  padding-top: 10px;
-
-
+  border-radius: 1.5px;
+  display: flex;
+  flex-direction: column;
+  
 }
 
-
-  li{
+ li{
       list-style-type: none;
       margin-bottom: 0;
       border-radius: 0;
@@ -87,22 +79,39 @@ body {
 
 
   }
-   .menu{
+
+ 
+
+  .menu{
 
         margin-bottom: 0;
         border-radius: 0;
         display: flex;
+        align-content: flex-start;
         flex-flow: row-reverse;
         justify-content: space-around;
-        padding-left: 75em;
+        border: 0;
+        border-radius: 0;
+        letter-spacing: 5px;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.1);
+        margin-bottom: 0;
+        border-radius: 0;
+        transition:0.7s;
+        height: 54px;
+
         
   }
 
+
+
 img{
 
-      height: 100px;
-      width: 155px;
-      border: 1px solid black;
+      height: 54px;
+      width: 80px;
       border-radius: 4px;
       padding-left: 4px;
 }
@@ -112,13 +121,25 @@ img{
     }
 
  footer {
-  background: skyblue;
-  height: 7em;
-  background-color: skyblue;
-  border: 1px solid black;
+  background: ;
+  height: 3em;
+  
 }
 
+.footer{
+
+    width:770px;
+    padding:5px;
+    float:left;
+    margin-bottom:15px;
+}
+
+p.agreement {
+    color: white;
+
+
 </style>
+<body>
 
 <div class="header">
   <div class="logo"><img src="Logo.jpg"></div>
@@ -127,24 +148,81 @@ img{
   <li><a href="devteam.html">HOME</a></li>
   <li><a href="Services.html">SERVICES</a></li>
   <li><a href="About.html">ABOUT</a></li>
-  <li><a href="">FAQ</a></li>
-  <li><a href="">TRACK</a></li>
+  <li><a href="FAQ.html">FAQ</a></li>
   <li><a href="">CONTACT</a></li>
 
  </ul>
 </div>
 </div>
-
+<br>
+<br>
   <div class="main">
 
 
  
- <div id="Box1"></div>
- <div id="Box2"></div>
- <div id="Box3"></div>
+ <div id="Box1"><h1 style="font-family: 'Ubuntu', sans-serif; display: flex; justify-content: center;">About Us</h1>
+
+ <p style=" padding: 7px 0 7px 0;font-weight: 500;font-size: 11pt; color: gray;">
+
+Fast Track Couriers has rapidly grown from a local dilivery brand to a national courier logistics company, recognized for its customized services around gugulethu and Cape town for it's fast and efficient courier dilivery service.Fast Track Couriers is centrally located at the crossroads between township of Gugulethu squere and Nyanga, which allows us to provide customized logistics solutions anywhere around Cape Town effectively and reach more businesses and consumers regionally and Provincially.
+
+</p>
+<br>
+<p style=" padding: 7px 0 7px 0;font-weight: 500;font-size: 11pt; color: gray;
+
+"></p>
+
+ </div>
+
+ <div id="Box2"><center><h1 style="font-family: 'Ubuntu', sans-serif; display: flex; justify-content: center;">Location</h1>
+ <br>
+ <img src="gugulethu.jpg" style="height: 200px;width: 300px; display: flex; align-content: center;">
+
+ <a href="https://www.google.com/maps">
+
+         <img src="images.jpg" alt="HTML tutorial" style="width: 42px;height: 42px;border-radius: 4px;">
+        <h3 style="font-family: 'Ubuntu', sans-serif; display: flex; justify-content: center; color: white; opacity: 0.7;"></h3>
+       </a>
 
 
+</center>
   </div>
  
+ <div class="footer">
+   
+   <legend style="font-family: 'Ubuntu', sans-serif; display: flex; justify-content: center;">Terms and Mailing
+                </legend>
+                <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>*  I accept the <a href="#">Terms and Conditions</a></label>
+                </p>
+                <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>I want to receive personalized offers by your site</label>
+                </p>
+                <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>Allow partners to send me personalized offers and related services</label>
+                </p>
+
+
+ </div>
   <center><footer></footer></center>
-</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+  $(function() {
+    $('#Box1').fadeOut(3000).show(3000)
+
+  });
+
+  $(function() {
+    $('#Box2').fadeOut(3000).show(3000)
+
+  });
+
+
+
+
+</script></body>

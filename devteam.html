@@ -1,84 +1,15 @@
 <!DOCTYPE html>
-<title>Home</title>
 <head>
+<title>Home</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="devteam.css">
 </head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body{
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  margin: 0;
-}
-.main {
-  display: flex;
-  flex: 1;
-  background-image: url("background.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-
-
-}
-
-.header{
-  background: skyblue;
-  height: 10em;
-  border: 1px solid black;
-}
-
-
- footer {
-  background: skyblue;
-  height: 7em;
-  border: 1px solid black;
-}
-
-
- li{
-      list-style-type: none;
-      margin-bottom: 0;
-      border-radius: 0;
-      display: inline-block;
-      padding: 3px;
-      
-
-
-  }
-   .menu{
-
-        margin-bottom: 0;
-        border-radius: 0;
-        display: flex;
-        flex-flow: row-reverse;
-        justify-content: space-around;
-        
-        
-  }
-
-img{
-
-      height: 100px;
-      width: 155px;
-      border: 1px solid black;
-      border-radius: 4px;
-      padding-left: 4px;
-
-}
-
-.logo{
-      padding-all: 3px;
-
-
-}
-</style>
 <body>
 
+
+<!-- Header/NavBar -->
 <div class="header">
   <div class="logo"><img src="Logo.jpg"></div>
   <div class="menu">
@@ -86,18 +17,109 @@ img{
   <li><a href="devteam.html">HOME</a></li>
   <li><a href="Services.html">SERVICES</a></li>
   <li><a href="About.html">ABOUT</a></li>
-  <li><a href="">FAQ</a></li>
-  <li><a href="">TRACK</a></li>
+  <li><a href="FAQ.html">FAQ</a></li>
   <li><a href="">CONTACT</a></li>
 
  </ul>
 </div>
 </div>
 
-  <div class="main">
 
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <center><h1 id="first">Welcome</h1>
+  <center><h1 id="Second" style=" font-family: font-family: 'Ubuntu', sans-serif; display: flex;justify-content: center;text-align: center;color: white;font-size: 150px;color: rgba(0,0,0,0.7);
+">How Can We Help?</h1></center>
+</div>
 
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h1 style=" font-family: font-family: 'Ubuntu', sans-serif; display: flex;justify-content: center;text-align: center;color: white;font-size: 100px;color: rgba(0,0,0,0.7);">Please Bare With Our Process</h2>
 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1 id="process" style=" font-family: 'Ubuntu', sans-serif;  display: flex;justify-content: center;text-align: center;color: white;font-size: 100px;color: rgba(0,0,0,0.7);">Your Package is Safe With Us</h1>
+  <p> </p>
+
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">
+ 
+  <div class="row">
+    <div class="col-sm-4">
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<center><h1 id="crypto" style=" font-family: 'Ubuntu', sans-serif;  display: flex;justify-content: center;text-align: center;color: white;font-size: 100px;color: #ffcc00; opacity: 0.5;";>Crypto Currency?</h1></center>
+
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<center><h1 id="sayless" style=" font-family: 'Ubuntu', sans-serif;  display: flex;justify-content: center;text-align: center;color: white;font-size: 100px;color: #ffcc00;opacity: 0.5;";>Say No More!</h1></center>
+    </div>
   </div>
-  <footer></footer>
-</body>
+</div>
+
+
+<!-- Social Icons-->
+
+<div class="footer">
+  <div class="fa"></div> 
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-reddit"></a>
+ </div>
+
+<!--js-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+$(window).scroll(
+    {
+        previousTop: 0
+    },
+    function () {
+    var currentTop = $(window).scrollTop();
+    if (currentTop <= this.previousTop) {
+        $(".sidebar em").text("");
+        $(".navbar").css("opacity", "1");
+    } else {
+        $(".sidebar em").text("");
+       $(".navbar").css("opacity", "0");
+    }
+    this.previousTop = currentTop;
+});
+
+
+
+  $(function() {
+    $('#first').fadeOut(3000).show(3000)
+
+  });
+
+  $(function() {
+    $('#Second').fadeOut(3000).show(3000)
+
+  });
+
+
+
+
+
+</script>
+
+
+</body> 

@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <title>Services Page</title>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
 <style>
 * {
-
   box-sizing: border-box;
-
 }
 
-body {
+body{
   display: flex;
+  justify-content: center;
   min-height: 100vh;
-  flex-direction: column;
   margin: 0;
-   
+  background-image: url("new.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
 }
 
 .main {
@@ -21,49 +29,136 @@ body {
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: center;
-  align-items: baseline;
+
 
 
 }
 
-header{
-  background: gray;
-  height: 7em;
+.header{
+  background: ;
+  height: 3em;
+
+}
+
+
+
+.Box1{
+
+
+  margin: 10px;
+  font-size: 30px;
+  width: 400px;
+  height: 300px;
   border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 1.5px;
+  
 
 }
 
+.Box2{
+
+  margin: 10px;
+  font-size: 30px;
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 1.5px;
+
+}
+.Box3{
+
+  margin: 10px;
+  font-size: 30px;
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 1.5px;
+  
+  
+
+
+}
+
+
+ li{
+      list-style-type: none;
+      margin-bottom: 0;
+      border-radius: 0;
+      display: inline-block;
+      padding: 2px;
+
+
+  }
+   .menu{
+
+        margin-bottom: 0;
+        border-radius: 0;
+        display: flex;
+        align-content: flex-start;
+        flex-flow: row-reverse;
+        justify-content: space-around;
+        border: 0;
+        border-radius: 0;
+        letter-spacing: 5px;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.1);
+        margin-bottom: 0;
+        border-radius: 0;
+        transition:0.7s;
+        height: 54px;
+
+
+  }
+
+
+img{
+
+      height: 54px;
+      width: 85px;
+      border-radius: 4px;
+}
+
+.logo{
+      padding-all: 3px;
+    }
 
  footer {
-  background: skyblue;
-  height: 7em;
-  background-color: gray;
-  border: 1px solid black;
-}
-
-
-#Box1{
-
-  background-color: gray;
-  margin: 10px;
-  font-size: 30px;
-  width: 550px;
-  height: 450px;
-  border: 1px solid black;
-  box-sizing: border-box;
- 
-
+  background: ;
+  height: 3em;
 
 }
 
-#Box2{
-  background-color: gray;
-  margin: 10px;
-  font-size: 30px;
-  width: 550px;
-  height: 450px;
-  border: 1px solid black;
-  box-sizing: border-box;
+  input{
+
+    border-radius: 6px;
+    width: 100px;
+    height: 30px;
+
+  }
+
+  .button{
+
+}
+
+h1,h4 {
+   color: white;
+   display: flex;
+   justify-content: center;
+
+}
+
+.service-info{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 2em;
 
 
 }
@@ -71,36 +166,90 @@ header{
 
 
 </style>
-<body>
-<header></header>
 
-  <div class="main">
+<div class="header">
+  <div class="logo"><img src="Logo.jpg"></div>
+  <div class="menu">
+  <ul>
+  <li><a href="devteam.html">HOME</a></li>
+  <li><a href="Services.html">SERVICES</a></li>
+  <li><a href="About.html">ABOUT</a></li>
+  <li><a href="FAQ.html">FAQ</a></li>
+  <li><a href="">CONTACT</a></li>
+
+ </ul>
+</div>
+</div>
+
+<div class="main">
+  <div class ="Box1">
+     <div class="contact">
+      <div class="Contact-item">
+        <center><h4>Find Your Package</h4></center>
+        <center><input placeholder="Enter your track no:"></input><button class="btn" style="border: 2px solid #0044CC;
+     color:#0044CC;;"onclick="myFunction()">Track it</button></center>
+
+        
+
+<script>
+function myFunction() {
+alert("You have entered an INVALID track no:");
+}
+</script>
 
 
- 
- <div id="Box1"></div>
- <div id="Box2"></div>
+       
 
+      </div>
+    </div>
+  </div>
+
+
+  <div class="Box2">
+      <div class="conta">
+        <div class="Contact-em">
+          <h4 style="font-family: 'Ubuntu', sans-serif; display: flex; justify-content: center; color: white;">PRICES</h4>
+          <div class="links">
+           <a href="Locally">Locally</a></div>
+           <form oninput="x.value=parseInt(a.value)* parseInt(b.value)">0<input type="number" id="a" value=" ">100km<input type="number" id="b" value="10"><output name="x" value="a b">Rands</output>
+</form>
+<br>
+    <a href="Provincially">Provincially</a></div>
+    <form oninput="x.value=parseInt(a.value)* parseInt(b.value)">0<input type="number" id="a" value=" ">100km<input type="number" id="b" value="10">Rands<output name="x" value="a b"></output>
+</form>
+  </div>
+  </div>
+
+  <div class="Box3">
+    <div class="Services">
+      <div class="service-info">
+
+    <center><h4 style="font-family: 'Ubuntu', sans-serif; color: white;">Services<h4></center>
+    <div id="Truck">
+     <img src="truck.png"><center><h4 style="font-family: 'Ubuntu', sans-serif; color: white;">Custom Routed Courier</h4></center>
+     </div>
+     <div id="House">
+      <img src="house.png"><center><h4 style="font-family: 'Ubuntu', sans-serif; color: white;">Residentials</h4></center>
+      </div>
+      <div id="Map">
+      <img src="images.jpg"><center><h4 style="font-family: 'Ubuntu', sans-serif; color: white;">Provincial</h4></center>
+      </div>
+
+    </div>
+  </div>
 
 
   </div>
- 
   <center><footer></footer></center>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 
   $(function() {
-    $('#Box1').fadeOut(3000).show(3000)
-
-  });
-
-  $(function() {
-    $('#Box2').fadeOut(3000).show(3000)
+    $('#Box1, #Box2, #Box3').fadeOut(3000).show(3000)
 
   });
 
 
-
-
-</script></body>
+</script>
+</body>
